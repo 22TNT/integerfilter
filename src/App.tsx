@@ -43,10 +43,11 @@ function App() {
           {filters.map(item =>
             <label>
               <input
-                  type={"radio"}
-                  name={"filter"}
+                  type="radio"
+                  name="filter"
                   onChange={() => setFilter(item)}
                   defaultChecked={item === Filter.ALL}
+                  checked={item === filter}
               />
               {item}
             </label>)}
